@@ -1,9 +1,9 @@
-set -o errexit
+set -e
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Run Django migrations (optional, if needed for deployment)
+# Run Django migrations (optional, if needed)
 python manage.py migrate --noinput
 
 # Collect static files
